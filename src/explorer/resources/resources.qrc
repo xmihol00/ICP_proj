@@ -1,0 +1,18 @@
+
+<!---
+File:        resources.qrc                                
+Case:        VUT, FIT, ICP, project                                      
+Author:      Vladislav Sokolovskii, xsokol15@stud.fit.vutbr.cz        
+Date:        summer semester 2021
+Brief:       Resources specification.
+-->
+
+<RCC>
+    <qresource prefix="/images">
+        <file>mqtt-logo.png</file>
+	<file>cam.png</file>
+    </qresource>
+    <qresource prefix="/gifs">
+        <file>loader.gif</file>
+    </qresource>
+</RCC>

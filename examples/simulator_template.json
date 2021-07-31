@@ -1,0 +1,144 @@
+/**
+ * File:        simulator_template.json
+ * Case:        VUT, FIT, ICP, project                             
+ * Author:      David Mihola, xmihol00@stud.fit.vutbr.cz           
+ * Date:        summer semester 2021                               
+ * Brief:       Template JSON file used to specified simulated devices by the simulator.        
+ **/
+
+{
+    "thermometers":
+    [
+        {
+            "topic": "the/topic/path/where/the/device/sends/messages",
+            "name": "name of the device",
+            "period": "integer value in seconds",
+            "min_temp": "floating point value in specified unit of measurement",
+            "max_temp": "floating point value in specified unit of measurement",
+            "min_step": "floating point value in specified unit of measurement",
+            "max_step": "floating point value in specified unit of measurement",
+            "temp": "floating point value in specified unit of measurement",
+            "unit": "unit of measurement"
+        }
+    ],
+
+    "hygrometers": 
+    [
+        {
+            "topic": "the/topic/path/where/the/device/sends/messages",
+            "name": "name of the device",
+            "period": "integer value in seconds",
+            "min_step": "floating point value in percentages",
+            "max_step": "floating point value in percentages",
+            "humidity": "floating point value in percentages"
+        }
+    ],
+
+    "wattmeters": 
+    [
+        {
+            "topic": "the/topic/path/where/the/device/sends/messages",
+            "name": "name of the device",
+            "period": "integer value in seconds",
+            "min_val": "integer value in specified unit of measurement",
+            "max_val": "integer value in specified unit of measurement",
+            "min_step": "integer value in specified unit of measurement",
+            "max_step": "integer value in specified unit of measurement",
+            "value": "integer value in specified unit of measurement",
+            "unit": "unit of measurement"
+        }
+    ],
+
+    "move sensors":
+    [
+        {
+            "topic": "the/topic/path/where/the/device/sends/messages",
+            "name": "name of the device",
+            "min_period": "integer value in seconds",
+            "max_period": "integer value in seconds"
+        },
+        {
+            "topic": "the/topic/path/where/the/device/sends/messages",
+            "name": "LIDAR",
+            "min_period": "integer value in seconds",
+            "max_period": "integer value in seconds",
+            "horizontal_FOV": "integer value - the width of the field of view of the device",
+            "vertical_FOV": "integer value - the hight of the field of view of the device"
+        }
+    ],
+
+    "lights":
+    [
+        {
+            "topic": "the/topic/path/where/the/device/sends/messages",
+            "name": "name of the device",
+            "recieving topic": "the/topic/path/on/which/the/device/recieves/messages",
+            "id": "unique identification of the device",
+            "period": "integer value in seconds",
+            "states": ["state1", "state2", "..."]
+        }
+    ],
+
+    "cameras":
+    [
+        {
+            "topic": "the/topic/path",
+            "name": "name of the device",
+            "min_preiod": "integer value in seconds",
+            "max_period": "integer value in seconds",
+            "images": ["path/to/first/image", 
+                       "path/to/second/image", 
+                       "..."]
+        }
+    ],
+
+    "relays":
+    [
+        {
+            "answering topic": "the/topic/path/where/the/device/sends/messages",
+            "name": "name of the device",
+            "recieving topic": "the/topic/path/on/which/the/device/recieves/messages",
+            "id": "unique identification of the device",
+            "states": ["state1", "state2", "..."]
+        }
+    ],
+
+    "valves":
+    [
+        {
+            "topic": "the/topic/path/where/the/device/sends/messages",
+            "name": "name of the device",
+            "period": "integer value in seconds",
+            "recieving topic": "the/topic/path/on/which/the/device/recieves/messages",
+            "id": "unique identification of the device",
+            "states": ["state1", "state2", "..."]
+        }
+    ],
+
+    "thermostats":
+    [
+        {
+            "topic": "the/topic/path/where/the/device/sends/messages",
+            "name": "name of the device",
+            "min_period": "integer value in seconds",
+            "max_period": "integer value in seconds",
+            "recieving topic": "the/topic/path/on/which/the/device/recieves/messages",
+            "id": "unique identification of the device",
+            "set_point": "floating point value in specified unit of measurement",
+            "max_temp_change" : "floating point value in specified unit of measurement",
+            "starting_temp" : "floating point value in specified unit of measurement",
+            "unit" : "unit of measurement"
+        }
+    ],
+
+    "locks":
+    [
+        {
+            "answering topic": "the/topic/path/where/the/device/sends/messages",
+            "name": "name of the device",
+            "recieving topic": "the/topic/path/on/which/the/device/recieves/messages",
+            "id": "unique identification of the device",
+            "states": ["state1", "state2", "..."]
+        }
+    ]
+}
