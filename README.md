@@ -57,6 +57,7 @@ Fully implemented.
 
 ## File Structure
 ### Clean Structure (after download or command 'make clean')
+```
 --doc/
     |
     |--Doxyfile
@@ -95,8 +96,10 @@ Fully implemented.
 --Makefile
 
 --README.txt
+```
 
 ### Structure with Generated Files (after commands 'make' and 'make doc')
+```
 --doc/
     |
     |--html/            (Contains generated html documentation.)
@@ -162,6 +165,7 @@ Fully implemented.
 --Makefile
 
 --README.txt
+```
 
 ## Documentation
 The documentation can be generated with commands 'make doxygen' or 'make doc'. To generate also graphs of dependencies, 
@@ -177,10 +181,11 @@ See the examples.
 
 ## Simulator Usage
 For specific cases of usage see the examples.
-### run in the /src/simulator directory as: ../bin/simulator [options ...]  
-### or run from anywhere and specify the configuration file: ./simulator --file "path/to/configuration/file" [options ...]
+### run in the `/src/simulator` directory as: `../bin/simulator [options ...]`  
+### or run from anywhere and specify the configuration file: `./simulator --file "path/to/configuration/file" [options ...]`
   
-### Options:  
+### Options: 
+```
    --help or -h:             Display this help/usage message to STDOUT.  
    --file or -f <file name>: JSON file from which application configuration is loaded, default file is 'config.json'.  
    --server or -s:           MQTT server address, default address is 'tcp://localhost:1883'.  
@@ -197,11 +202,12 @@ For specific cases of usage see the examples.
    --thermostats or -e:      Include or exclude thermostats.  
    --valves or -u:           Include or exclude valves.  
    --wattmeters or -w:       Include or exclude wattmeters.
+```
 
 ## MQTT explorer usage
 For specific cases of usage see the examples.
-### run in the /src/explorer directory as: ../bin/explorer
-### or run from anywhere and specify the configuration file as an argument: ./explorer "path/to/configuration/file"
-The application can be also started in verbose mode if -v or --verbose is specified in the command line arguments. If the 
-configuration file cannot be opened, new file 'config.json' will be created and a state of the dashboard will be saved 
+### run in the `/src/explorer` directory as: `../bin/explorer`
+### or run from anywhere and specify the configuration file as an argument: `./explorer "path/to/configuration/file"`
+The application can be also started in verbose mode if `-v` or `--verbose` is specified in the command line arguments. If the 
+configuration file cannot be opened, new file `config.json` will be created and a state of the dashboard will be saved 
 there at termination.
